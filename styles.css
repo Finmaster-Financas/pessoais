@@ -1,0 +1,744 @@
+/* Reset e estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+    color: #ffcc00;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Seções gerais */
+section {
+    padding: 40px 0;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3, h4 {
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.attention-headline {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #ffcc00;
+    margin-bottom: 30px;
+    line-height: 1.3;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-container {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Problem Section */
+.problem {
+    background-color: #f9f9f9;
+    padding: 40px;
+}
+
+.alert-box {
+    background-color: #ffebeb;
+    border-left: 5px solid #ff4d4d;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.alert-box p {
+    color: #cc0000;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+/* Story Section */
+.story {
+    padding: 40px;
+}
+
+.testimonial {
+    background-color: #f0f7ff;
+    border-left: 5px solid #3498db;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.highlight-box {
+    background-color: #fffbeb;
+    border: 2px dashed #ffcc00;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.highlight-box h4 {
+    color: #cc9900;
+}
+
+.results-box {
+    background-color: #efffef;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.bad-score {
+    color: #cc0000;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.good-score {
+    color: #00cc00;
+    font-size: 1.5rem;
+}
+
+.emphasis {
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+/* Pain Points Section */
+.pain-points {
+    background-color: #f9f9f9;
+    padding: 40px;
+}
+
+.pain-illustration {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.pain-item {
+    text-align: center;
+    margin: 10px;
+    flex: 1;
+    min-width: 150px;
+}
+
+.pain-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.solution-intro {
+    background-color: #efffef;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.solution-intro h4 {
+    color: #00aa00;
+}
+
+/* Benefits Section */
+.benefits {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.benefit-card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 20px;
+    flex: 0 0 calc(33.333% - 20px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-icon {
+    font-size: 2rem;
+    color: #00cc00;
+    margin-bottom: 15px;
+}
+
+.benefit-detail {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* Social Proof Section */
+.social-proof {
+    padding: 40px;
+    background-color: #f9f9f9;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.testimonial-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    flex: 0 0 calc(33.333% - 20px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-avatar {
+    width: 60px;
+    height: 60px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.testimonial-content {
+    flex-grow: 1;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 0;
+}
+
+.counter {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.counter-number {
+    color: #3498db;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.join-cta {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+/* Bonuses Section */
+.bonuses {
+    padding: 40px;
+}
+
+.bonus-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.bonus-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    flex: 0 0 calc(33.333% - 20px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: flex-start;
+}
+
+.bonus-icon {
+    font-size: 2.5rem;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.bonus-content {
+    flex-grow: 1;
+}
+
+.bonus-value {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+}
+
+.bonus-tag {
+    background-color: #00cc00;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.bonus-note {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+}
+
+/* Pricing Section */
+.pricing {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.price-comparison {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.price-item {
+    margin: 0 15px;
+    padding: 15px;
+    border-radius: 8px;
+    min-width: 120px;
+}
+
+.price-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.price-label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.crossed {
+    position: relative;
+}
+
+.crossed::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ff4d4d;
+    transform: rotate(-10deg);
+}
+
+.highlighted {
+    background-color: #ffcc00;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.highlighted .price-value {
+    color: #1a1a1a;
+}
+
+.installment {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.price-comparison-items {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.comparison-item {
+    margin: 0 15px;
+    text-align: center;
+}
+
+.comparison-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.urgency-message {
+    background-color: #ffebeb;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+
+.urgency-message p {
+    color: #cc0000;
+    font-weight: 500;
+}
+
+/* CTA Section */
+.cta {
+    padding: 40px;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.limited-offer {
+    margin-bottom: 30px;
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counter-box {
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 10px 0;
+    min-width: 120px;
+}
+
+.timer-container {
+    margin: 30px 0;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.timer-item {
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    padding: 10px;
+    border-radius: 8px;
+    min-width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-number {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.timer-label {
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.timer-separator {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 10px;
+    align-self: center;
+}
+
+.cta-button {
+    display: block;
+    background-color: #00cc00;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 30px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.cta-button:hover {
+    background-color: #00aa00;
+    transform: scale(1.05);
+}
+
+.cta-main {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.cta-sub {
+    font-size: 1rem;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.guarantee {
+    background-color: white;
+    color: #1a1a1a;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.guarantee-icon {
+    font-size: 3rem;
+    margin-right: 20px;
+}
+
+.guarantee-content {
+    text-align: left;
+}
+
+.guarantee-content h4 {
+    margin-bottom: 10px;
+}
+
+.guarantee-content p {
+    margin-bottom: 0;
+}
+
+.bonus-reminder {
+    background-color: #fffbeb;
+    color: #cc9900;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 30px 0;
+    font-weight: 600;
+}
+
+.final-message {
+    margin: 30px 0;
+}
+
+.final-message p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .benefit-card, .testimonial-card, .bonus-card {
+        flex: 0 0 calc(50% - 15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .benefit-card, .testimonial-card, .bonus-card {
+        flex: 0 0 100%;
+    }
+    
+    .price-comparison {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .price-item {
+        margin: 10px 0;
+    }
+    
+    .highlighted {
+        transform: scale(1);
+    }
+    
+    .price-comparison-items {
+        flex-direction: column;
+    }
+    
+    .comparison-item {
+        margin: 10px 0;
+    }
+    
+    .timer {
+        flex-wrap: wrap;
+    }
+    
+    .timer-item {
+        margin: 5px;
+    }
+    
+    .guarantee {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .guarantee-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .guarantee-content {
+        text-align: center;
+    }
+}
+
+
+
+/* Estilos adicionais para as imagens */
+.image-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.problem-image, .story-image {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.story-image {
+    max-height: 400px;
+    object-fit: contain;
+}
+
